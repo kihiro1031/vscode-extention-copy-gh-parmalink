@@ -1,0 +1,18 @@
+# Node.js
+node_modules/
+package-lock.json
+
+# VSCode
+.vscode/
+.history/
+*.code-workspace
+
+# Build output
+out/
+dist/
+*.vsix
+
+# Extensions
+extensions/*/node_modules/
+extensions/*/out/
+extensions/*/dist/
