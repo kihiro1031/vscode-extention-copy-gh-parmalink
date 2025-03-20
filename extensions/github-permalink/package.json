@@ -1,22 +1,30 @@
 {
   "name": "github-permalink",
-  "displayName": "github-permalink",
+  "displayName": "GitHub Permalink",
   "description": "Copy GitHub Permalink in Markdown",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.98.0"
   },
   "categories": [
-    "Other"
+    "Source Control"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "*"
+  ],
   "main": "./out/extension.js",
   "contributes": {
-    "commands": [
+    "commands": [ 
       {
         "command": "extension.copyGitHubPermalink",
         "title": "Copy GitHub Permalink"
-  
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.copyGitHubPermalink",
+        "key": "ctrl+shift+c",
+        "when": "editorTextFocus"
       }
     ]
   },
@@ -24,11 +32,13 @@
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
+    "clean": "rm -rf out",
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src",
     "test": "vscode-test",
     "package": "vsce package"
   },
+  "dependencies": {},
   "devDependencies": {
     "@types/vscode": "^1.98.0",
     "@types/mocha": "^10.0.10",

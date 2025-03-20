@@ -1,23 +1,26 @@
 # GitHub Permalink Extension for VSCode
 
-This VSCode extension allows users to copy GitHub permalinks in Markdown format for their selected lines.
+[markdownlinkcopier](https://github.com/kihiro1031/IntelliJGithubLinkCopyPlugin/tree/master?tab=readme-ov-file#markdownlinkcopier) を vscode の拡張機能版
 
 ## Features
+github リポジトリで管理している java, kotlin を開き、右クリックメニューから本機能を実行可能です。 この機能は以下の Markdown 形式でクリップボードにコピーします。
 
-- Copy GitHub permalinks for the selected file and lines
-- Generates links in `[Markdown](https://github.com)` format
-- Works with both SSH and HTTPS GitHub URLs
+```
+[{クラス名}#{メソッド名}#L{行番号}](Github Repository URL)
+```
+
+詳しくは[markdownlinkcopier](https://github.com/kihiro1031/IntelliJGithubLinkCopyPlugin/tree/master?tab=readme-ov-file#markdownlinkcopier) 
 
 ## How to Use
 
-1. Open a file in a Git-tracked project.
-2. Select a line or multiple lines.
-3. Press `Ctrl+Shift+P` → "Copy GitHub Permalink" to copy the permalink to the clipboard.
+1. github で管理されたリポジトリのJava、Kotlinファイルを開く
+2. permalink を取得したい行にカーソルを移動、もしくは複数行を選択
+3. `Ctrl+Shift+P` → "Copy GitHub Permalink" を選択
 
 ## Installation
 
-1. Download the `.vsix` file from releases.
-2. Install via: `code --install-extension github-permalink-0.0.1.vsix`
+1. github-permalink-X.X.X.vsix をダウンロードしてください。
+2. 以下のコマンドによりvscodeに拡張機能をインストールしてください。 `code --install-extension github-permalink-X.X.X.vsix`
 
 ## License
 
