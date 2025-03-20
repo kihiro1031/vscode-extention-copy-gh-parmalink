@@ -14,8 +14,9 @@
   "contributes": {
     "commands": [
       {
-        "command": "github-permalink.helloWorld",
-        "title": "Hello World"
+        "command": "extension.copyGitHubPermalink",
+        "title": "Copy GitHub Permalink"
+  
       }
     ]
   },
@@ -25,7 +26,8 @@
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src",
-    "test": "vscode-test"
+    "test": "vscode-test",
+    "package": "vsce package"
   },
   "devDependencies": {
     "@types/vscode": "^1.98.0",
