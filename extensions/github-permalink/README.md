@@ -1,4 +1,4 @@
-# markdownlinkcopier for VSCode
+# Copy GitHub Permalink in VSCode
 
 [markdownlinkcopier](https://github.com/kihiro1031/IntelliJGithubLinkCopyPlugin/tree/master?tab=readme-ov-file#markdownlinkcopier) の vscode の拡張機能版
 
@@ -15,11 +15,7 @@ github で管理している Java, kotlin ファイルを開き、右クリッ�
 
 1. github で管理されたリポジトリのJava、Kotlinファイルを開く
 2. permalink を取得したい行にカーソルを移動、もしくは複数行を選択
-3. `Ctrl+Shift+P` → "Copy GitHub Permalink" を選択、もしくはキーボードショートカット(`⌃⇧C`)
-   - <img width="708" alt="image" src="https://github.com/user-attachments/assets/47ee6a55-d4b4-4ef8-b156-40ca13ea6009" />
-
-4. ペースト
-   - [SampleJavaClass#main#L8-L9](https://github.com/kihiro1031/IntelliJGithubLinkCopyPlugin/blob/24547721b5d8452c7795c53b45d2f0cef1a9cc92/markdownLinkCopier/samples/SampleJavaClass.java#L8-L9)
+3. `Ctrl+Shift+P` → "(Markdown) Copy Link to Github Repository" を選択、もしくはキーボードショートカット(`⌃⇧C`)
 
 ## Installation
 

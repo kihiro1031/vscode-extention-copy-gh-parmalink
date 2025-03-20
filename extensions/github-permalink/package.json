@@ -1,7 +1,12 @@
 {
   "name": "github-permalink",
   "displayName": "GitHub Permalink",
-  "description": "Copy GitHub Permalink in Markdown",
+  "description": "Copy GitHub Permalink as Markdown",
+  "publisher": "Akihiro Okiguchi",
+  "author": {
+    "name": "Akihiro Okiguchi",
+    "url": "https://github.com/kihiro1031"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.98.0"
@@ -17,7 +22,7 @@
     "commands": [ 
       {
         "command": "extension.copyGitHubPermalink",
-        "title": "Copy GitHub Permalink"
+        "title": "(Markdown) Copy Link to Github Repository"
       }
     ],
     "keybindings": [
