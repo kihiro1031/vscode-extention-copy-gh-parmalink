@@ -4,7 +4,7 @@ import * as path from "path";
 
 export function activate(context: vscode.ExtensionContext) {
   let disposable = vscode.commands.registerCommand(
-    "extension.copyGitHubPermalink",
+    "extension.copyGitHubPermalinkShort",
     async () => {
       const editor = vscode.window.activeTextEditor;
       if (!editor) {
