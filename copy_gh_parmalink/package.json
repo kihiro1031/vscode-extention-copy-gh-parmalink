@@ -1,11 +1,15 @@
 {
-  "name": "github-permalink",
-  "displayName": "GitHub Permalink",
-  "description": "Copy GitHub Permalink as Markdown",
-  "publisher": "Akihiro Okiguchi",
+  "name": "github-permalink-short",
+  "displayName": "Copy GitHub Permalink (Markdown Short Style)",
+  "description": "Copy GitHub Permalink as Markdown in a short, concise format",
+  "publisher": "akihiro-okiguchi",
   "author": {
     "name": "Akihiro Okiguchi",
     "url": "https://github.com/kihiro1031"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kihiro1031/vscode-extention-copy-gh-parmalink.git"
   },
   "version": "0.0.1",
   "engines": {
@@ -21,13 +25,13 @@
   "contributes": {
     "commands": [ 
       {
-        "command": "extension.copyGitHubPermalink",
-        "title": "(Markdown) Copy Link to Github Repository"
+        "command": "extension.copyGitHubPermalinkShort",
+        "title": "Copy GitHub Permalink (Markdown Short Style)"
       }
     ],
     "keybindings": [
       {
-        "command": "extension.copyGitHubPermalink",
+        "command": "extension.copyGitHubPermalinkShort",
         "key": "ctrl+shift+c",
         "when": "editorTextFocus"
       }
